@@ -19,7 +19,7 @@ else ifneq (,$(findstring LINUX,$(PLATFORM)))
     CC=gcc
 # unknown configuration
 else
-    $(error uname gave unexpected result. maybe your platform isn\'t supported.)
+    $(error uname gave unexpected result. maybe your platform is not supported.)
 endif
 
 test: ${BUILD_DIR}${TARGET} tests.py
