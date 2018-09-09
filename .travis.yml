@@ -1,0 +1,12 @@
+language: python
+sudo: not required
+dist: trusty
+
+python:
+    - 3.4
+
+install:
+    make
+
+script:
+    - python -m unittest tests.py
